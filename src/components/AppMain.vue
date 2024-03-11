@@ -1,9 +1,11 @@
 <script>
 import AppJumbo from './AppJumbo.vue'
+import KnowUs from './KnowUs.vue'
 
 export default {
     components: {
         AppJumbo,
+        KnowUs,
     }
 }
 
@@ -13,6 +15,7 @@ export default {
 <template>
 
     <AppJumbo></AppJumbo>
+    <KnowUs></KnowUs>
 
 </template>
 
