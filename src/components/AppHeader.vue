@@ -45,9 +45,9 @@ export default {
                         <i class="fa-solid fa-bars"></i>
                     </div>
 
-                    <button class="bg-black text-white px-1 py-1">
+                    <button class="btn bg-black text-white px-2 py-2">
                         <img class="helmet" src="/public/img/helmet.jpg" alt="">
-                        Upcoming Events 
+                             Upcoming Events 
                         <i class="fa-solid fa-arrow-right"></i>
                     </button>
 
