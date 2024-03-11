@@ -45,8 +45,10 @@ export default {
                         <i class="fa-solid fa-bars"></i>
                     </div>
 
-                    <button>
-                        Upcoming Events
+                    <button class="bg-black text-white px-1 py-1">
+                        <img class="helmet" src="/public/img/helmet.jpg" alt="">
+                        Upcoming Events 
+                        <i class="fa-solid fa-arrow-right"></i>
                     </button>
 
 
@@ -61,7 +63,7 @@ export default {
 
 .navbar {
     height: 92px;
-    img {
+    .logo {
         height: 60px;
         width: 200px;
     }
@@ -70,6 +72,9 @@ export default {
         text-decoration: none;
         list-style: none;
         color: black;
+    }
+    .helmet {
+        height: 40px;
     }
 }
 
