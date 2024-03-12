@@ -38,15 +38,17 @@ export default {
         <div v-for="(slide, index) in slides" :key="index" v-show ="index == activeSlideIndex" class=" position-relative ">
             <img :src="`/img/${slide.image}`" alt="Slide" class="img-fluid w-100 object-fit-cover" />
 
-            <div id="text-area">
-                <h1>{{ slide.title }}</h1>
-                <p class="d-flex"> {{ slide.subtitle }}</p>
+            <div id="text-area" class="d-flex flex-column text-start ">
+                <h1 class="ps-5"><strong>{{ slide.title }}</strong></h1>
+                
+                <p class="ps-5"> <strong>{{ slide.subtitle }}</strong></p>
 
-                <button class= "text-white px-3 py-3 bg-black d-flex gap-1">
-                    Learn More
-                    <i class="fa-solid fa-arrow-right d-flex align-items-center px-1 mt-1"></i>
 
-                </button>
+    <button class= "text-white px-3 py-3 bg-black d-flex gap-1 ms-5 w-50 ali ">
+        Learn More
+        <i class="fa-solid fa-arrow-right d-flex align-items-center px-1 mt-1"></i>
+        
+    </button>
             </div>
 
             <button @click="prevSlide()" class="prev"><i class="fa-solid fa-chevron-left"></i></button>
@@ -58,6 +60,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../styles/variables.scss' as *; 
+
 .slider {
   text-align: center;
   
@@ -99,9 +103,14 @@ right: 2%;
 
 #text-area {
         position: absolute;
-        top:50%;
-        left:15%;
+        top:40%;
+        left:10%;
         color: white;
+        width: 300px;
+
+        p {
+            font-size: $fontSizeSmall;
+        }
 
         button {
             position: relative;
