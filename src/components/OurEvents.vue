@@ -123,10 +123,10 @@ export default {
     <div class="container text-center pb-5 title">
         
 
-        <h3>Don't Miss Our Events!</h3>
+        <h2><strong>Don't Miss Our Events!</strong></h2>
         <p>Get the amazing cycling experience.</p>
 </div>
-<div class="container gap-4 pb-3 d-flex flex-wrap">
+<div class="container px-4  gap-4 pb-3 d-flex flex-wrap justify-content-around ">
 
         <div v-for="event in events" class="card position-relative ">
             <img :src="`/img/${event.image}`">
@@ -134,7 +134,7 @@ export default {
                 <h5 class="card-title"><strong>{{event.name}}</strong></h5>
                 <p class="card-text"><i class="fa-regular fa-clock"></i> {{ event.date }}</p>
                 <p class="card-text"><i class="fa-solid fa-location-dot"></i> {{ event.place }}</p>
-                <p class="type rounded rounded-2 w-25 text-center p-1 ">{{ event.type }}</p>
+                <p class="type rounded rounded-2  text-center p-1 ">{{ event.type }}</p>
 
                 <div class="tag shadow-lg position-absolute text-center bg-white  rounded rounded-2">
 
@@ -160,8 +160,10 @@ export default {
 @use '../styles/general.scss' as *;
 @use '../styles/variables.scss' as *; 
 
+
+
 .card {
-    max-width: 440px;
+    max-width: 400px;
 
     .card-text {
         color: rgb(106, 106, 106);
@@ -177,6 +179,7 @@ export default {
         .day {
             font-size:$fontSizeBig;
             font-weight:600;
+            margin: 0;
             
         }
 
@@ -191,6 +194,7 @@ export default {
         background-color: #f5f5f5;
         color: rgb(106, 106, 106);
         font-weight: 400;
+        width: 100px;
     }
 }
 

@@ -27,7 +27,7 @@ export default {
     <div class="container text-center pb-3 title">
         
 
-            <h3>Our Professional Cycling Trainings</h3>
+            <h2><strong>Our Professional Cycling Trainings</strong></h2>
             <p>Learn from the mountain biking expert.</p>
     </div>
 
