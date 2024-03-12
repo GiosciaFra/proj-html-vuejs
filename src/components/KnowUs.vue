@@ -90,14 +90,14 @@ export default {
 .know-right {
     max-width: 400px;
     padding-right: 40px;
-}
-h2 {
-    font-size: $fontSizeBig;
-}
-
-p {
-    font-size: $fontSizeSmall;
-
+    h2 {
+        font-size: $fontSizeBig;
+    }
+    
+    p {
+        font-size: $fontSizeSmall;
+        
+    }
 }
     .pro {
         img {

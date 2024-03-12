@@ -36,7 +36,7 @@ export default {
             
             <div v-for="slide in slides" class="d-flex gap-2 position-relative ">
                 <div class=" contras mx-3 border border-5  border-black  "><img :src="`/img/${slide.image}`" alt="" class="photo"></div>
-                <div class="text-slide">
+                <div class="text-slide text-white position-absolute  ">
                     <h4><strong>{{ slide.text }}</strong></h4>
 
                 </div>
@@ -48,8 +48,8 @@ export default {
         
         <div class="container d-flex justify-content-center  align-items-center buttons gap-2 ">
             
-            <button><i class="fa-solid fa-chevron-left"></i></button>
-            <button><i class="fa-solid fa-chevron-right"></i></button>
+            <button class=" bg-white "><i class="fa-solid fa-chevron-left"></i></button>
+            <button class=" bg-white "><i class="fa-solid fa-chevron-right"></i></button>
         </div>
 
 
@@ -69,11 +69,9 @@ export default {
 filter: brightness(60%);
 }
 
-.text-slide{
-        position: absolute;
+.text-slide{ 
         top:25px;
         left:45px;
-        color: white;
 }
 
 .buttons {
@@ -81,7 +79,6 @@ filter: brightness(60%);
     padding-top: 70px;
 
     button{
-        background-color: white;
         width: 60px;
         height: 60px;
     }
