@@ -5,11 +5,10 @@ export default {
     data() {
         return {
             slides: [
-            { image: 'slider-bike-4.jpg', title: 'Professional Cycling Club', subtitle: 'Learn Cycling from the pros.' },
-            { image: 'slider-bike-9.jpg', title: 'Professional Cycling Club', subtitle: 'Learn Cycling from the pros.' },
-            { image: 'slider-bike-12.jpg', title: 'Professional Cycling Club', subtitle: 'Learn Cycling from the pros.' },
-            // Aggiungi più oggetti slide con immagini e testi
-        ],
+                { image: 'slider-bike-4.jpg', title: 'Professional Cycling Club', subtitle: 'Learn Cycling from the pros.' },
+                { image: 'slider-bike-9.jpg', title: 'Professional Cycling Club', subtitle: 'Learn Cycling from the pros.' },
+                { image: 'slider-bike-12.jpg', title: 'Professional Cycling Club', subtitle: 'Learn Cycling from the pros.' },
+            ],
         activeSlideIndex: 0,
     };
 },
@@ -58,7 +57,7 @@ export default {
 </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .slider {
   text-align: center;
   
