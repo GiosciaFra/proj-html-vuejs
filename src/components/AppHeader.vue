@@ -45,10 +45,10 @@ export default {
                         <i class="fa-solid fa-bars"></i>
                     </div>
 
-                    <button class="btn bg-black text-white px-2 py-2">
-                        <img class="helmet" src="/public/img/helmet.jpg" alt="">
+                    <button class=" bg-black text-white px-2 py-2">
+                        <img class="helmet pe-2 " src="/public/img/helmet.jpg" alt="">
                              Upcoming Events 
-                        <i class="fa-solid fa-arrow-right"></i>
+                        <i class="fa-solid fa-arrow-right ps-2 "></i>
                     </button>
 
 
@@ -59,7 +59,7 @@ export default {
 </template>
 
 <style lang="scss">
-@use '../styles/general.scss';
+@use '../styles/general.scss' as *;
 
 .navbar {
     height: 92px;
