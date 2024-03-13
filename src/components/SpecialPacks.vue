@@ -8,40 +8,55 @@ export default {
             packs: [
             {
              front: {
-            icon: 'handshake.png',
+            icon: 'handshake-white.png',
             title: 'Basic',
             subtitle: 'Learn to bike from the professionals',
-            list: ['Item 1', 'Item 2', 'Item 3']
+            list: ['✓ Phone Mountaineer bike training', 
+                    '✓ Remote Excellent bike service', 
+                    '✓ Onsite Safe cycling training', 
+                    '✗ Saafety helmet on bike', 
+                    '✗ Free bikes for children']
           },
              back: {
             title: 'Basic',
-            list: ['Back Item 1', 'Back Item 2', 'Back Item 3']
+            price: '$1000',
+            button: 'Send Request!'
           }
         },
 
         {
              front: {
-            icon: 'helmet.png',
+            icon: 'helmet-white.png',
             title: 'Standard',
             subtitle: 'Learn to bike from the professionals',
-            list: ['Item 1', 'Item 2', 'Item 3']
+            list: ['✓ Phone Mountaineer bike training', 
+                    '✓ Remote Excellent bike service', 
+                    '✓ Onsite Safe cycling training', 
+                    '✗ Saafety helmet on bike', 
+                    '✗ Free bikes for children']
           },
              back: {
             title: 'Standard',
-            list: ['Back Item 1', 'Back Item 2', 'Back Item 3']
+            price: '$3000',
+            button: 'Send Request!'
           }
         },
 
         {
              front: {
-            icon: 'racing-helmet.png',
+            icon: 'racing-helmet-white.png',
             title: 'Premium',
             subtitle: 'Learn to bike from the professionals',
-            list: ['Item 1', 'Item 2', 'Item 3']
+            list: ['✓ Phone Mountaineer bike training', 
+                    '✓ Remote Excellent bike service', 
+                    '✓ Onsite Safe cycling training', 
+                    '✗ Saafety helmet on bike', 
+                    '✗ Free bikes for children']
           },
              back: {
             title: 'Premium',
-            list: ['Back Item 1', 'Back Item 2', 'Back Item 3']
+            price: '$5000',
+            button: 'Send Request!'
           }
         },
             ]
@@ -52,11 +67,15 @@ export default {
 
 <template>
 
-<div class="container-title text-center py-4 title">
+<div class="container-title text-center justify-content-center align-items-center  py-4 title">
 
-    <div class="icon-packs">
-        <i class="fa-solid fa-award fa-2xl"></i>
+
+    <div class=" d-flex justify-content-center align-items-center mb-3">
+        <div class="icon-aw d-flex justify-content-center align-items-center">
+            <img src="/public/img/medal.png" alt="">
         </div>
+    </div>
+
 
 
         <h2><strong>Special Packs</strong></h2>
@@ -65,22 +84,27 @@ export default {
 
 <div class="packs-container d-flex justify-content-center ">
 
-    <div v-for="(pack, index) in packs" :key="index" class="pack ">
+    <div v-for="(pack, index) in packs" :key="index" class="pack shadow-lg  ">
       <div class="pack-inner">
-        <div class="pack-face front d-flex flex-column">
-            <img :src="`/img/${pack.front.icon}`" alt="">
-          <h3>{{ pack.front.title }}</h3>
-          <ul>
-            <li v-for="(item, i) in pack.front.list" :key="i">{{ item }}</li>
-          </ul>
-        </div>
-        <div class="pack-face back d-flex flex-column">
-          <img :src="`/img/${pack.front.icon}`" alt="">
-          <h3>{{ pack.back.title }}</h3>
-          <ul>
-            <li v-for="(item, i) in pack.back.list" :key="i">{{ item }}</li>
-          </ul>
-        </div>
+        
+            <div class="pack-face front d-flex flex-column align-items-center gap-3 text-white ">
+                <img :src="`/img/${pack.front.icon}`" alt="" class="mt-4" >
+                <h4><strong>{{ pack.front.title }}</strong></h4>
+                <p class=" fs-6 my_padding "> {{ pack.front.subtitle }}</p>
+
+
+                <ul class="list-unstyled text-black fs-6 d-flex flex-column  gap-4 text-center   ">
+                    <li class=" border-bottom " v-for="(item, i) in pack.front.list" :key="i">{{ item }}</li>
+                </ul>
+            </div>
+
+
+            <div class="pack-face back d-flex flex-column justify-content-center text-white align-items-center ">
+                <h3><strong>{{ pack.back.title }}</strong></h3>
+                <p class="pb-5 fs-2"><strong>{{ pack.back.price }}</strong></p>
+
+                <button class="mt-5 border bg-black text-white px-5 py-4"><strong>{{ pack.back.button }}</strong></button>
+            </div>
       </div>
     </div>
 </div>    
@@ -99,6 +123,7 @@ export default {
 .pack {
       width: 430px;
       height: 625px;
+      perspective: 1000px;
       margin: 20px;
       cursor: pointer;
     }
@@ -119,15 +144,10 @@ export default {
       height: 100%;
       position: absolute;
       backface-visibility: hidden;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 24px;
-      color: red
     }
 
     .front {
-        background: linear-gradient(-15deg, white 60%, black 40%);
+        background: linear-gradient(-5deg, white 60%, rgb(0, 0, 0) 40%);
         }
 
     .back {
@@ -137,8 +157,22 @@ export default {
 
 
     img {
-        width: 80px;
-        height: 90px;
+        width: 85px;
+        height: 85px;
     }
 
+    .my_padding {
+        padding-bottom: 100px;
+    }
+
+    button {
+        font-size: 15px;
+    }
+
+
+    .icon-aw {
+        width: 80px;
+        height: 80px;
+        background-color: black;
+    }
 </style>
