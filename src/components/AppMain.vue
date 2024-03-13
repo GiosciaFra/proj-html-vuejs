@@ -14,7 +14,9 @@ export default {
         OurEvents,
         OurTrainers,
         SpecialPacks
-    }
+    },
+
+    
 
     
 }
