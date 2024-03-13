@@ -36,6 +36,9 @@ export default {
             <div class="d-flex align-items-baseline gap-2">
                 <i class="fa-regular fa-envelope"></i> <p>example@example.com</p>
             </div>
+
+
+         
         </div>
       
 
@@ -44,7 +47,7 @@ export default {
             <h3>Join our newsletter</h3>
             <p>Subscribe to recieve useful information.</p>
             <form action="#">
-              <input type="email" placeholder="Il tuo indirizzo email" name="email" class="w-100 p-4">
+              <input type="email" placeholder="Your email address" name="email" class="w-100 p-4">
               <button class="d-flex w-100 p-4 d-flex align-items-center gap-3 bg-white" type="submit">Subscribe<i class="fa-solid fa-arrow-right"></i></button>
             </form>
           </div>
@@ -55,7 +58,7 @@ export default {
             <div id="trainings">
                 <h3 >Trainings</h3>
                 <ul class=" d-flex flex-column gap-2 list-unstyled ">
-                    <li v-for="train in trainings" :key="link">{{ train.title }}</li>
+                    <li v-for="train in trainings" :key="link"><img src="/public/img/substract.png" class="substract">{{ train.title }}</li>
                 </ul>
 
             </div>
@@ -63,7 +66,7 @@ export default {
             <div id="quick-links">
                 <h3>Quick Links</h3>
                 <ul class=" d-flex flex-column gap-2 list-unstyled">
-                <li v-for="link in quickLinks" :key="link">{{ link.title }}</li>
+                <li v-for="link in quickLinks" :key="link"><img src="/public/img/substract.png" class="substract">{{ link.title }}</li>
                 </ul>
             </div>
 
@@ -88,7 +91,11 @@ img {
     height: 80px;
 }
 
-// ul {
-//     list-style-type:
-// }
+.substract {
+    width: 15px;
+    height: 35px;
+    padding-right: 5px;
+}
+
+
 </style>

@@ -31,7 +31,7 @@ export default {
 
                 <div id="links" class="d-flex align-items-center h-100 ">
 
-                    <ul class="nav-links d-flex list-unstyled gap-2   ">
+                    <ul class="nav-links d-flex list-unstyled gap-3   ">
                         <li v-for="(link, index) in links" :key="index">
                             <a :href="link.url">{{ link.text }}</a>
                         </li>

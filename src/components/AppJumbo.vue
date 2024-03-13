@@ -75,10 +75,12 @@ export default {
 }
 
 .prev, .next {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
+    border: none;
     margin: 10px 0;
     background: #231f1f;
+    
     position: absolute;
     top: 50%;
     z-index: 9;
