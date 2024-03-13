@@ -5,6 +5,7 @@ import OurProTrainings from './OurProTrainings.vue'
 import OurEvents from './OurEvents.vue'
 import OurTrainers from './OurTrainers.vue'
 import SpecialPacks from './SpecialPacks.vue'
+import ResentNewsArticles from './ResentNewsArticles.vue'
 
 export default {
     components: {
@@ -13,7 +14,8 @@ export default {
         OurProTrainings,
         OurEvents,
         OurTrainers,
-        SpecialPacks
+        SpecialPacks,
+        ResentNewsArticles
     },
 
     
@@ -32,6 +34,7 @@ export default {
     <OurEvents></OurEvents>
     <OurTrainers></OurTrainers>
     <SpecialPacks></SpecialPacks>
+    <ResentNewsArticles></ResentNewsArticles>
 
 </template>
 

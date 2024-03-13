@@ -71,7 +71,7 @@ export default {
 
 
     <div class=" d-flex justify-content-center align-items-center mb-3">
-        <div class="icon-aw d-flex justify-content-center align-items-center">
+        <div class="icon-aw d-flex justify-content-center align-items-center bg-black ">
             <img src="/public/img/medal.png" alt="">
         </div>
     </div>
@@ -123,7 +123,6 @@ export default {
 .pack {
       width: 430px;
       height: 625px;
-      perspective: 1000px;
       margin: 20px;
       cursor: pointer;
     }
@@ -173,6 +172,5 @@ export default {
     .icon-aw {
         width: 80px;
         height: 80px;
-        background-color: black;
     }
 </style>

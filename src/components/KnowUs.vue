@@ -30,10 +30,10 @@ export default {
 
                         <img src="/public/img/divider.jpg" alt="">
 
-                        <div class="pro d-flex pt-4 gap-2  ">
+                        <div class="pro d-flex pt-4 gap-2 align-items-center  ">
                             <img src="/public/img/racing-helmet.png" alt="">
                             
-                            <div class="team d-flex flex-wrap ps-3 flex-column pt-2">
+                            <div class="team d-flex flex-wrap ps-3 flex-column pt-2 ">
                                 
                                 <h3 class="fw-bold" >Professional Team</h3>
                                 <p>We make you professional by adding yuor sincerity as well as professionalism.</p>
@@ -41,7 +41,7 @@ export default {
                             
                         </div>
                         
-                        <div class="pro d-flex pt-4 gap-2">
+                        <div class="pro d-flex pt-4 gap-2 align-items-center">
                             <img src="/public/img/helmet.png" alt="">
 
                             <div class="train d-flex flex-wrap ps-3 flex-column pt-2 ">
